@@ -52,20 +52,6 @@ return [
             'prefix' => '',
         ],
 
-        'mysql' => [
-            'driver' => 'mysql',
-            'host' => env('DB_HOST', '216.172.173.17'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'seon3529_febrasgo'),
-            'username' => env('DB_USERNAME', 'seon3529_febrasg'),
-            'password' => env('DB_PASSWORD', '34867519'),
-            'charset' => 'utf8',
-            'collation' => 'utf8_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => 'InnoDB',
-        ],
-
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', 'ec2-107-20-193-202.compute-1.amazonaws.com'),
