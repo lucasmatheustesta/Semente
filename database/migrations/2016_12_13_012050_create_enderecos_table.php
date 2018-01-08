@@ -31,8 +31,8 @@ class CreateEnderecosTable extends Migration
             $table->string('complemento', 50)->nullable();
             $table->string('bairro', 50)->nullable();
 
-            $table->integer('pais_id')->unsigned();
-            $table->foreign('pais_id')->references('id')->on('paises')->onDelete('no action');
+//            $table->integer('pais_id')->unsigned();
+//            $table->foreign('pais_id')->references('id')->on('paises')->onDelete('no action');
 
             $table->string('localidade', 100)->nullable();
 
