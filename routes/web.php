@@ -12,7 +12,8 @@
 */
 
 // Authentication Routes...
-Route::get('/', 'Auth\LoginController@showLoginForm')->name('login');
+//Route::get('/', 'Auth\LoginController@showLoginForm')->name('login');
+Route::get('/', 'LoginController@showLoginForm')->name('login');
 Route::get('/login/sair', ['as'=>'login.sair', 'uses' => 'UserController@sair']);
 
 Auth::routes();
