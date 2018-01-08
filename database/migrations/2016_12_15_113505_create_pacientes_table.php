@@ -29,7 +29,7 @@ class CreatePacientesTable extends Migration
             $table->foreign('estado_id')->references('id')->on('estados')->onDelete('no action');
 
             $table->integer('cidade_id')->unsigned();
-            $table->foreign('cidade_id')->references('id')->on('cities')->onDelete('no action');
+            $table->foreign('cidade_id')->references('id')->on('cidades')->onDelete('no action');
 
             $table->string('bairro')->nullable(); 
 
