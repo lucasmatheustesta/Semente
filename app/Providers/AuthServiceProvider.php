@@ -31,7 +31,7 @@ class AuthServiceProvider extends ServiceProvider
         });
         */
         //recuperar todas as permissoes e verificar se o usuario logado tem a permisssao
-/*        $permissions = Permission::with('roles')->get();
+        $permissions = Permission::with('roles')->get();
 
         //listo elas aqui no foreach
         foreach($permissions as $permission)
@@ -45,6 +45,6 @@ class AuthServiceProvider extends ServiceProvider
         $gate->before(function (User $user, $ability){
             if ($user->hasAnyRoles('admin'))
                 return true;
-        });*/
+        });
     }
 }
